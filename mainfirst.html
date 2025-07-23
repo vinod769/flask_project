@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>main page</title>
+  <style>
+    body {
+      background-color: #f0f0f0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 420px);
+      gap: 20px;
+    }
+
+    a.card-link {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+      text-align: center;
+      padding: 10px;
+      cursor: pointer;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.02);
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    }
+
+    .card img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+  <div class="grid">
+    <!-- Card 1 -->
+    <a href="/subpage1" class="card-link">
+      <div class="card">
+        <img src="https://img.freepik.com/free-vector/hand-drawn-tractor-silhouette-illustration_23-2151205342.jpg" alt="Tractor" />
+        <h3>Tractor</h3>
+      </div>
+    </a>
+
+    <!-- Card 2 -->
+    <a href="/seedmain1" class="card-link">
+      <div class="card">
+        <img src="https://tse4.mm.bing.net/th/id/OIP.zHA4daF_Ztadto-u0NgRjQHaH_?rs=1&pid=ImgDetMain&o=7&rm=3" alt="seeds" />
+        <h3>seeds</h3>
+      </div>
+    </a>
+
+    <!-- Card 3 -->
+    <a href="/subpage2" class="card-link">
+      <div class="card">
+        <img src="https://th.bing.com/th/id/OIP.p8Lz6XOLlbuqAXF2KtLtpQHaH5?w=170&h=181&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="Mandulu and Yeruvulu" />
+        <h3>Mandulu and Yeruvulu</h3>
+      </div>
+    </a>
+
+    <!-- Card 4 -->
+    <a href="/godanmain1" class="card-link">
+      <div class="card">
+        <img src="https://tse3.mm.bing.net/th/id/OIP.cISy62dVBOOg0uZmwYKN0wHaDp?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Farm View" />
+        <h3>Panta</h3>
+      </div>
+    </a>
+  </div>
+</body>
+</html>
